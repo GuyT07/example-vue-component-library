@@ -4,10 +4,18 @@
   "description": "Example of a Vue component library",
   "main": "index.js",
   "dependencies": {
-    "vue": "^2.5.17"
+
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@storybook/vue": "^4.0.9",
+    "babel-loader": "^8.0.4",
+    "babel-preset-vue": "^2.0.2",
+    "vue-loader": "^15.4.2",
+    "vue-template-compiler": "^2.5.17"
+  },
   "scripts": {
+    "storybook": "start-storybook -p 9001 -c ./storybook/configuration",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
