@@ -7,7 +7,7 @@ import Component from 'vue-class-component';
 })
 export default class ButtonComponent extends Vue {
     // Initial data can be declared as instance properties
-    public message: string = 'Hello!';
+    public message: string = 'Hello world!';
 
     // Component methods can be declared as instance methods
     private onClick(): void {

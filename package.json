@@ -1,10 +1,12 @@
 {
   "name": "example-vue-component-library",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.2",
+  "private": false,
+  "main": "./dist/example-vue-component-library.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:npm": "vue-cli-service build --target lib --name example-vue-component-library src/App.vue",
     "lint": "vue-cli-service lint",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit",
@@ -37,5 +39,12 @@
     "vue-template-compiler": "^2.5.17",
     "vuex": "^3.0.1",
     "webpack-cli": "^3.1.2"
-  }
+  },
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ]
 }
