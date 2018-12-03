@@ -8,10 +8,13 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import HelloWorld from './components/HelloWorld.vue';
+import ButtonComponent from './components/ButtonComponent';
+
+Vue.component('lum-button', ButtonComponent);
 
 @Component({
   components: {
-    HelloWorld,
+    HelloWorld, ButtonComponent,
   },
 })
 export default class App extends Vue {}
