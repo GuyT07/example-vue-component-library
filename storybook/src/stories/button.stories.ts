@@ -9,5 +9,5 @@ storiesOf('Luminis button', module)
     .add('story as a template', () => '<lum-button></lum-button>')
     .add('story as a component', () => ({
         components: { ButtonComponent },
-        template: '<lum-button></lum-button>'
+        template: '<lum-button message="Hello"></lum-button>'
     }));
